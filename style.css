@@ -423,6 +423,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .Contactme div h2, .Contactme div p{
+    font-size: 30px;
+
+   }
   .main-container {
     display: flex;
     flex-direction: column; /* Change the flex direction to column */
@@ -462,17 +466,19 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 30px;
   }
   .query-left-div {
     border-right: none;
     width: 100%;
   }
+  .query-left-div p{ font-size: 30px; }
   .query-right-div {
     width: 100%;
   }
   .menu-icon {
     display: block;
-    width: 30px;
+    width: 40px;
     margin-right: 30px;
     padding: 20px;
   }
@@ -487,5 +493,13 @@ img {
 .show-menu{
     max-height: 60px;
  }
+ .links
+ {
+    font-size: 30px;
+  }
+  .links-right-div{
+    font-size: 30px;
+    margin-top: 10px;
+   }
 }
 
