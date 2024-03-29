@@ -25,7 +25,7 @@
             <div class="nav-head">
                 <a href="#Home">Ammar</a>
             </div>
-            <ul>
+            <ul id="menu-links" class="menu-links">
                 <li><a style="text-decoration: none; color: white;"
                         href="#Home">Home</a></li>
                 <li><a style="text-decoration: none; color: white;"
@@ -37,6 +37,8 @@
                 <li><a style="text-decoration: none; color: white;"
                         href="#Contactme">Contact</a></li>
             </ul>
+            <img src="menu.png" alt=" " class="menu-icon"
+                onclick="toggleMenu()">
         </nav>
         <div id="Home">
             <div class="main-container">
@@ -103,7 +105,8 @@
             </div>
         </div>
         <div id="Experience" class="Experience">
-            <h3 style="text-align: center; font-size: 30px; margin-top: 20px;">Experience</h3>
+            <h3
+                style="text-align: center; font-size: 30px; margin-top: 20px;">Experience</h3>
             <div class="gradient-border"></div>
             <div class="Experience-left-div">
                 <h3>2023</h3>
@@ -195,6 +198,7 @@
         let elem3 = document.getElementById("progressBar3");
         let width = 0;
         let id = setInterval(frame, 10);
+        
         function frame() {
             if (width >= 80) {
                 clearInterval(id);
@@ -217,6 +221,12 @@
     }
 });
 
+    </script>
+    <script>
+        let menuLinks = document.getElementById("menu-links");
+function toggleMenu() { 
+menuLinks.classList.toggle('menu-links');
+ }
     </script>
 
 </html>
