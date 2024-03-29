@@ -4,13 +4,13 @@ body {
   background-color: black;
   color: white;
   font-family: "Lora", serif;
+  line-height: 1.8;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 20px 20px;
   position: fixed;
   top: 0;
   background-color: black;
@@ -181,9 +181,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 70px;
 }
+.skills h3{
+    font-size: 30px;
+ }
 .Experience {
-  height: 100vh;
+  height: fit-content;
   margin-top: 10%;
 }
 .gradient-border {
@@ -378,37 +382,85 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .homeabout-left-div  {
+  .homeabout-left-div {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 30px;
   }
-  .homeabout-right-div h3,.homeabout-left-div h3{
-font-size: 35px;
-   }
-  .homeabout-right-div{
+  .homeabout-right-div h3,
+  .homeabout-left-div h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .homeabout-right-div {
     width: 100%;
     font-size: 30px;
-   }
-   .Experience{
+  }
+  .Experience {
     margin-top: 0;
     height: fit-content;
-    }
-    .Experience-left-div{
-        width: 95%;
-        height: fit-content;
+  }
+  .Experience-left-div {
+    width: 95%;
+    height: fit-content;
+  }
+  .Education {
+    display: flex;
+    flex-direction: column;
+  }
+  .Education-left-div,
+  .Education-right-div {
+    width: 95%;
+  }
+  .Contactme {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.left-div {
+    order: 2; /* Set the order to 2 for left-div */
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-div {
+    order: 1; /* Set the order to 1 for right-div */
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.skills{
+    margin-left: 0;
+    height: fit-content;
+    
+ }
+ .skills h3{
+    font-size: 45px;
+    text-align: center;
+  }
+ .progress{
+    width: 100%;
+  }
+  .query{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   }
+   .query-left-div
+   { border-right: none;
+    width: 100%;}
+    .query-right-div{
+        width: 100%;
      }
-     .Education{
-        display: flex;
-        flex-direction: column;
-      }
-      .Education-left-div,.Education-right-div{
-width: 100%;
-width: 95%;
-       }
-       .Contactme{
-        display: flex;
-        flex-direction: column;
-        }
 }
