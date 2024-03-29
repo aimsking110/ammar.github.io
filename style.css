@@ -405,6 +405,7 @@ font-size: 35px;
       }
       .Education-left-div,.Education-right-div{
 width: 100%;
+width: 95%;
        }
        .Contactme{
         display: flex;
