@@ -1,9 +1,565 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
         <title> Ammar Portfolio </title>
+        <link rel="style.css" href="style.css">
+        <link href="path/to/font-awesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+            rel="stylesheet">
+        <style>
+            body{
+                margin-left: 150px;
+                margin-right: 150px;
+                font-family:  "Poppins", Arial, sans-serif;
+                background-color: black;
+                color: white;
+            }
+            .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+                .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+            }
+            .nav ul li {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+            .nav ul li:hover{
+                color:blue;
+            }
+            div:first-child {
+                 flex: 1;
+            }
+            .main-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100vh;
+            }   
+            .left-div {
+                flex: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }   
+            .heading{
+                color: grey;
+                text-decoration: underline;
+                font-size: 20px;
+                margin-left: 50px;
+                font-weight: bold;
+            }
+            .description{
+                color: black;
+                font-size: 30px;
+                margin-left: 50px;
+                margin-top: -40px;
+                margin-bottom: 80px;
+            }
+            .left-div h1{
+                font-size: 70px;
+                margin-left: 50px;
+             }
+            .right-div {
+                flex: 1;
+                padding: 20px;
+                text-align: center;
+            }      
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .right-div img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 50%; /* Makes the image round */
+                overflow: hidden; /* Ensures the image stays within the bounds of the circle */
+                object-fit: cover; /* Ensures the image stays within the bounds of the circle */
+            }      
+            .contact-info {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .contact-info i {
+        margin-right: 10px; /* Add some space between the icon and text */
+        color: gray; /* Set the color of the icon */
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin: 0; /* Remove default margin from the paragraph */
+        color: gray; /* Set the color of the text */
+        font-family: Arial, sans-serif; /* Set the font family */
+        font-size: 16px; /* Set the font size */
+        margin-bottom: 10px;
+    }
+    .contact-info p a{
+        color: gray;
+     }
+     .homeabout{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+      }
+    .homeabout-left-div{
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+       }
+    .homeabout-right-div{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+       
+     }
+     .progress {
+  width: 70%;
+  background-color: gray;
+  border-radius: 50px;
+ 
+}
+
+.progress-bar {
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 50px;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Experience{
+    height: 100vh;
+    margin-top: 10%;
+ }
+ .gradient-border{
+    position: relative;
+    height: 2px;
+   
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px; /* Border height */
+    background: linear-gradient(to right, #e66465, #9198e5); /* Gradient color */
+    border-radius: 50px;
+}
+.Experience-left-div{
+
+margin-top: 20px;
+width: 50%;
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        background-color: #ffffff1a;
+
+ }
+ .Experience-right-div{
+    display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+  }
+  .Education{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+   }
+
+    .Education-left-div{
+        margin-top: 20px;
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        background-color: #ffffff1a;
+        margin-right: 10px; /* Add margin to the right side */
+    }
+    .Education-right-div{
+        margin-top: 20px;
+        width: 50%;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        padding: 20px;
+        width: 50%;
+        padding: 20px;
+        margin-left: 10px; /* Add margin to the left side */
+        background-color: #ffffff1a;
+        line-height: 2.5;
+    }
+    .Contactme {
+        margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 35vh;
+}
+
+.Contactme div {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px; /* Add margin for spacing */
+    border-radius: 5px;
+}
+
+.Contactme div i {
+    font-size: 30px;
+}
+
+.Contactme div h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.Contactme div p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+.query {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.query-left-div,
+.query-right-div {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.query-left-div {
+    border-right: 1px solid #ddd;
+}
+
+.query-left-div p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.query-left-div span {
+    font-weight: bold;
+}
+
+.query-right-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.query-right-div a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c4753;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.query-right-div a:hover {
+    background-color: #0056b3;
+}
+.links {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    
+    font-size: 20px;
+}
+
+.links-left-div,
+.links-right-div {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+
+.links-right-div {
+    display: flex;
+}
+
+.links-right-div div {
+    margin: 0 10px;
+}
+
+.links-right-div a {
+    display: inline-block;
+    padding: 10px;
+    color: rgb(147, 131, 131);
+    text-decoration: none;
+}
+
+.links-right-div a:hover {
+    color: white;
+}
+
+
+
+        </style>
     </head>
     <body>
-        <h1>Aims</h1>
+        <nav class="nav">
+            <div style="font-size: 30px; width: 50%; ">
+                <a style="text-decoration: none; color: white;"
+                    href="#Home">Ammar</a>
+            </div>
+            <div style="width: 50%;">
+                <ul>
+                    <li><a style="text-decoration: none; color: white;"
+                            href="#Home">Home</a></li>
+                    <li><a style="text-decoration: none; color: white;"
+                            href="#Aboutme">About</a></li>
+                    <li><a style="text-decoration: none; color: white;"
+                            href="#Experience">Experience</a></li>
+                    <li><a style="text-decoration: none; color: white;"
+                            href="#Education">Education</a></li>
+                    <li><a style="text-decoration: none; color: white;"
+                            href="#Contactme">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="Home">
+            <div class="main-container">
+                <div class="left-div">
+                    <p class="heading">Hello!</p>
+                    <h1>I'm Ammar</h1>
+                    <p class="description">Web Developer</p>
+                    <div class="contact-info">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <p><a
+                                href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fa fa-phone"></i>
+                        <p><a href="tel:+923114973469"> +92 311-4973469 </a></p>
+                    </div>
+                </div>
+                <div class="right-div">
+                    <img src="ammar.jpg" alt="Your Picture">
+                </div>
+            </div>
+        </div>
+        <div id="Aboutme" class="homeabout">
+            <div class="homeabout-left-div">
+                <h3 style="font-size: 30px; ">About Me</h3>
+                <p>Ammar is a dynamic and innovative web developer with a solid
+                    background in BS Software Engineering. With 1 year of
+                    professional experience, I have honed my skills in web
+                    development, focusing on the Laravel framework. My expertise
+                    extends to various front-end technologies, including
+                    JavaScript
+                    (jQuery), CSS3, HTML5, and Bootstrap. My passion
+                    for
+                    web development is reflected in my dedication to creating
+                    engaging and user-friendly websites.
+                </p>
+            </div>
+            <div class="homeabout-right-div">
+
+                <div style="margin-left: 70px;" class="skills">
+                    <h3 style="font-size: 30px;">Skills</h3>
+                    <div style="margin-bottom: 10px;">Laravel</div>
+                    <div class="progress" style="margin-bottom: 10px;">
+                        <div class="progress-bar" id="progressBar"
+                            style="width: 0%"></div>
+                    </div>
+                    <div style="margin-bottom: 10px;">Html5</div>
+                    <div class="progress" style="margin-bottom: 10px;">
+                        <div class="progress-bar" id="progressBar1"
+                            style="width: 0%"></div>
+                    </div>
+                    <div style="margin-bottom: 10px;">CSS3</div>
+                    <div class="progress" style="margin-bottom: 10px;">
+                        <div class="progress-bar" id="progressBar2"
+                            style="width: 0%"></div>
+                    </div>
+                    <div style="margin-bottom: 10px;">JavaScript</div>
+                    <div class="progress" style="margin-bottom: 10px;">
+                        <div class="progress-bar" id="progressBar3"
+                            style="width: 0%"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="Experience" class="Experience">
+            <h3 style="text-align: center; font-size: 30px; margin-top: 20px;">Experience</h3>
+            <div class="gradient-border"></div>
+            <div class="Experience-left-div">
+                <h4>2023</h4>
+                <h3>Full Stack Web Developer</h3>
+                <h5>Freelancing</h5>
+                <p>As a freelancer, I have successfully completed three
+                    projects, including the development of a custom-made
+                    website. These projects involved creating account management
+                    systems and designing company websites.</p>
+            </div>
+        </div>
+        <div id="Education">
+            <h3
+                style="text-align: center; font-size: 30px; margin-top: 100px ;">Education</h3>
+            <div class="gradient-border"></div>
+            <div class="Education">
+                <div class="Education-left-div">
+                    <h4>2019 - 2023</h4>
+                    <h3>Bachelor of Science</h3>
+                    <h5>Software Engineering</h5>
+                    <h2>University of Management and Technology</h2>
+                </div>
+                <div class="Education-right-div">
+                    <h4>2017 - 2019</h4>
+                    <h3>Intermediate</h3>
+                    <h5>ICS</h5>
+                    <h2>Unique College</h2>
+                </div>
+            </div>
+        </div>
+        <h3 style="text-align: center; font-size: 30px;">Contact Me</h3>
+        <div class="gradient-border"></div>
+        <div id="Contactme" class="Contactme">
+            <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h2>Contact Number</h2>
+                <p><a style="color:gray;" href="tel:+923114973469"> +92
+                        311-4973469 </a></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h2>Email Address</h2>
+                <p><a style="color:gray;"
+                        href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a></p>
+            </div>
+            <div>
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                <h2>Resume</h2>
+                <p><a style="color:gray;"
+                        href="https://drive.google.com/file/d/1dC4IRoxxgbgccggEB5Cm9lD75ea8f60U/view?usp=drive_link">Ammar's
+                        Resume </a></p>
+            </div>
+        </div>
+        <div class="query">
+            <div class="query-left-div">
+                <p>HAVE A QUESTION? <br><span>Feel Free To
+                        Contact</span></p></div>
+            <div class="query-right-div">
+                <div>
+                    <a href="https://forms.gle/KdZekkwGK2dZKu2FA"> CLICK
+                        HERE</a>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="links-left-div">
+                <p>Find me on</p>
+            </div>
+            <div class="links-right-div">
+                <div style="text-align: left;margin-top: 10px;">
+                    <a
+                        href="https://www.linkedin.com/in/ammar-izhar-61a442204/">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://github.com/aimsking110"><i
+                            class="fa fa-github"></i></a>
+                    <a
+                        href="https://www.instagram.com/aims_king_official?igsh=Zmoxd25jYmU3ZzRz"><i
+                            class="fab fa-instagram"></i></a></div>
+            </div>
+        </div>
     </body>
+    <script>
+        function move() {
+        let elem = document.getElementById("progressBar");
+        let elem1 = document.getElementById("progressBar1");
+        let elem2 = document.getElementById("progressBar2");
+        let elem3 = document.getElementById("progressBar3");
+        let width = 0;
+        let id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 80) {
+                clearInterval(id);
+            } else {
+              width++;
+              elem.style.width = width + "%";
+              elem1.style.width = width + "%";
+              elem2.style.width = width + "%";
+              elem3.style.width = width + "%";
+            }
+        }
+    }
+        move();
+        $(window).on('scroll', function() {
+    var scrollPosition = $(this).scrollTop();
+    if (scrollPosition > 100) { // Adjust 100 to the desired scroll position
+        $('.nav').addClass('fixed-nav');
+    } else {
+        $('.nav').removeClass('fixed-nav');
+    }
+});
+
+    </script>
 </html>
