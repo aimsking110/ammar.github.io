@@ -45,7 +45,7 @@
                 <div class="left-div">
                     <p class="heading">Hello!</p>
                     <h1>I'm Ammar</h1>
-                    <p class="description">Web Developer</p>
+                    <p class="description">Full Stack Developer</p>
                     <div class="contact-info">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <p><a
@@ -189,6 +189,9 @@
                             class="fab fa-instagram"></i></a></div>
             </div>
         </div>
+        <div class="copyright">
+            <p>Copyright © Ammar</p>
+        </div>
     </body>
     <script>
         function move() {
@@ -197,8 +200,10 @@
         let elem2 = document.getElementById("progressBar2");
         let elem3 = document.getElementById("progressBar3");
         let width = 0;
+        let width1 = 0;
         let id = setInterval(frame, 10);
-        
+        let id1 = setInterval(frame1, 10);
+        let id2 = setInterval(frame2, 10);
         function frame() {
             if (width >= 80) {
                 clearInterval(id);
@@ -210,11 +215,27 @@
               elem3.style.width = width + "%";
             }
         }
+        function frame1() {
+            if (width >= 95) {
+                clearInterval(id1);
+            } else {
+              width++;
+              elem1.style.width = width + "%";
+            }
+        }
+        function frame2() {
+            if (width >= 85) {
+                clearInterval(id2);
+            } else {
+              width++;
+              elem2.style.width = width + "%";
+            }
+        }
     }
         move();
         $(window).on('scroll', function() {
     var scrollPosition = $(this).scrollTop();
-    if (scrollPosition > 100) { // Adjust 100 to the desired scroll position
+    if (scrollPosition > 100) { 
         $('nav').addClass('fixed-nav');
     } else {
         $('nav').removeClass('fixed-nav');
