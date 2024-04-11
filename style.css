@@ -365,6 +365,17 @@ img {
 .menu-icon {
   display: none;
 }
+.projects-left-div {
+  margin-top: 30px;
+  width: 35%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  background-color: #ffffff1a;
+}
 
 @media only screen and (max-width: 1235px) {
   nav {
