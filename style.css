@@ -186,10 +186,12 @@ img {
 .skills h3 {
   font-size: 30px;
 }
-.Experience {
+.Experience,
+.Project {
   height: fit-content;
   margin-top: 10%;
 }
+
 .gradient-border {
   position: relative;
   height: 2px;
@@ -376,7 +378,6 @@ img {
   text-align: justify;
   background-color: #ffffff1a;
 }
-
 
 @media only screen and (max-width: 1235px) {
   nav {
