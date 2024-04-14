@@ -1,3 +1,4 @@
+
 body {
   margin-left: 150px;
   margin-right: 150px;
@@ -191,7 +192,9 @@ img {
   height: fit-content;
   margin-top: 10%;
 }
-
+.Projects{
+  display: flex;
+ }
 .gradient-border {
   position: relative;
   height: 2px;
@@ -288,7 +291,6 @@ img {
 .query {
   display: flex;
   width: 100%;
-  margin-top: 50px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -329,13 +331,13 @@ img {
 }
 
 .query-right-div a:hover {
-  background-color: #0056b3;
+  background-color: wheat;
+  color: black;
+  font-size: large;
 }
 .links {
   display: flex;
   width: 100%;
-  margin-top: 50px;
-
   font-size: 20px;
 }
 
@@ -362,7 +364,7 @@ img {
 }
 
 .links-right-div a:hover {
-  color: white;
+  color: wheat;
 }
 .menu-icon {
   display: none;

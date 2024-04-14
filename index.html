@@ -31,9 +31,9 @@
                 <li><a style="text-decoration: none; color: white;"
                         href="#Aboutme">About</a></li>
                 <li><a style="text-decoration: none; color: white;"
-                        href="#Experience">Experience</a></li>
-                <li><a style="text-decoration: none; color: white;"
                         href="#Project">Project</a></li>
+                        <li><a style="text-decoration: none; color: white;"
+                                href="#Experience">Experience</a></li>
                 <li><a style="text-decoration: none; color: white;"
                         href="#Contactme">Contact</a></li>
             </ul>
@@ -44,7 +44,7 @@
             <div class="main-container">
                 <div class="left-div">
                     <p class="heading">Hello!</p>
-                    <h1>I'm Ammar</h1>
+                    <h1 style="color: wheat;">I'm Ammar</h1>
                     <p class="description">Full Stack Developer</p>
                     <div class="contact-info">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -108,15 +108,36 @@
             <h3
                 style="text-align: center; font-size: 30px; margin-top: 20px;">Projects</h3>
             <div class="gradient-border"></div>
-
-            <div class="projects-left-div" style="margin-top: 30px; width: 35%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a;">
-                <div><img src="logo.jpg"></div>
-                <h3><a style="color: white;"
-                        href="https://umarenterprises.com.pk/">Umar
-                        Enterprises</a></h3>
-                <p>UMAR ENTERPRISES is a versatile service provider, offering a
-                    wide array of services tailored to meet the diverse needs of
-                    its customers..</p>
+            <div class="Projects">
+                <div class="projects-left-div"
+                    style="margin-top: 30px; width: 35%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a; margin-right: 20px;">
+                    <div><img src="logo.jpg"></div>
+                    <h3><a style="color: white;"
+                            href="https://umarenterprises.com.pk/">Umar
+                            Enterprises</a></h3>
+                    <p>I developed a dynamic website for UMAR ENTERPRISES,
+                        focusing on showcasing their range of services. The
+                        website offers a user-friendly experience, highlighting
+                        services such as repairing, woodwork, building paint,
+                        and electric items installation. Through this project, I
+                        honed my skills in web development and design, creating
+                        a platform that effectively promotes UMAR ENTERPRISES'
+                        services.</p>
+                </div>
+                <div class="projects-left-div"
+                    style="margin-top: 30px; width: 35%; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a;">
+                    <div><img src="Untitled-1.png"></div>
+                    <h3>Chughtai Publishers</h3>
+                    <p>I developed an Account Management System for CP in
+                        Laravel, which greatly enhanced my skills in both
+                        finance and development. Throughout the project, I
+                        encountered several challenges, particularly in
+                        automating the creation of bills and converting them
+                        into PDF format for easy download. Despite these
+                        hurdles, I successfully implemented these features,
+                        further strengthening my expertise in both areas.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="Experience" class="Experience">
@@ -264,5 +285,20 @@ function toggleMenu() {
 menuLinks.classList.toggle('menu-links');
  }
     </script>
-
+    <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            var targetId = this.getAttribute('href'); 
+            var targetElement = document.querySelector(targetId); 
+            if (targetElement) {
+                var offsetTop = targetElement.offsetTop; 
+                window.scrollTo({
+                    top: offsetTop - 100, 
+                    behavior: 'smooth' 
+                });
+            }
+        });
+    });
+</script>
 </html>
