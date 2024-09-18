@@ -1,4 +1,3 @@
-
 body {
   margin-left: 150px;
   margin-right: 150px;
@@ -187,14 +186,11 @@ img {
 .skills h3 {
   font-size: 30px;
 }
-.Experience,
-.Project {
-  height: fit-content;
-  margin-top: 10%;
-}
-.Projects{
+
+.Projects {
   display: flex;
- }
+  height: fit-content;
+}
 .gradient-border {
   position: relative;
   height: 2px;
@@ -209,28 +205,39 @@ img {
   background: linear-gradient(to right, #e66465, #9198e5); /* Gradient color */
   border-radius: 50px;
 }
-.Experience-left-div {
-  margin-top: 20px;
-  width: 50%;
-  flex: 1;
+.Experience {
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the width for better readability */
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  background-color: #ffffff1a;
+  box-sizing: border-box;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between the divs */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.Experience-left-div,
 .Experience-right-div {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  flex: 1;
+  width: 50%; /* Ensure both divs have the same width */
   padding: 20px;
+  background-color: #ffffff1a;
+  box-sizing: border-box;
 }
+
+.Experience-left-div {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.Experience-right-div {
+  text-align: justify;
+}
+
 .Education {
   display: flex;
   width: 100%;
-  height: 50vh;
 }
 
 .Education-left-div {
@@ -416,14 +423,30 @@ img {
     width: 100%;
     font-size: 30px;
   }
+  /* Container for the Experience section */
   .Experience {
-    margin-top: 0;
-    height: fit-content;
+    display: flex;
+    justify-content: space-between; /* Distribute space between the divs */
+    align-items: flex-start; /* Align items to the top (optional) */
+    margin: 0 auto;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit the width for better readability on larger screens */
+    padding: 20px;
+    box-sizing: border-box;
   }
+
+  .Experience-left-div,
+  .Experience-right-div {
+    width: 48%; /* Both divs take almost half of the available width */
+    height: fit-content;
+    box-sizing: border-box;
+  }
+
   .Experience-left-div {
-    width: 95%;
-    height: fit-content;
+    text-align: left; /* Ensure left div's text aligns to the left */
   }
+
+
   .Education {
     display: flex;
     flex-direction: column;
