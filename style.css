@@ -106,7 +106,7 @@ div:first-child {
   text-align: center;
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .right-div img {
@@ -424,16 +424,16 @@ img {
     font-size: 30px;
   }
   /* Container for the Experience section */
-  .Experience {
+  /*.Experience {
     display: flex;
-    justify-content: space-between; /* Distribute space between the divs */
-    align-items: flex-start; /* Align items to the top (optional) */
-    margin: 0 auto;
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Limit the width for better readability on larger screens */
-    padding: 20px;
+    justify-content: space-between;*/ /* Distribute space between the divs */
+    /*align-items: flex-start;*/ /* Align items to the top (optional) */
+    /*margin: 0 auto;
+    width: 100%;*/ /* Full width */
+    /*max-width: 1200px;*/ /* Limit the width for better readability on larger screens */
+    /*padding: 20px;
     box-sizing: border-box;
-  }
+  }*/
 
   .Experience-left-div,
   .Experience-right-div {
