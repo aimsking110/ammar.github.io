@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title> Ammar Portfolio </title>
     <link rel="stylesheet" href="style.css">
@@ -12,447 +13,435 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="ammar.jpg">
 </head>
-    <body>
-        <nav>
-            <div class="nav-head">
-                <a href="#Home">Ammar</a>
+
+<body>
+    <nav>
+        <div class="nav-head">
+            <a href="#Home">Ammar</a>
+        </div>
+        <ul id="menu-links" class="menu-links">
+            <li><a style="text-decoration: none; color: white;" href="#Home">Home</a></li>
+            <li><a style="text-decoration: none; color: white;" href="#Aboutme">About</a></li>
+            <li><a style="text-decoration: none; color: white;" href="#Project">Project</a></li>
+            <li><a style="text-decoration: none; color: white;" href="#Experience">Experience</a></li>
+            <li><a style="text-decoration: none; color: white;" href="#Contactme">Contact</a></li>
+        </ul>
+        <img src="menu.png" alt=" " class="menu-icon" onclick="toggleMenu()">
+    </nav>
+    <div id="Home">
+        <div class="main-container">
+            <div class="left-div">
+                <p class="heading">Hello!</p>
+                <h1 style="color: wheat;">I'm Ammar</h1>
+                <p class="description">Software Engineer</p>
+                <div class="contact-info">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p><a href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:+923114973469"> +92 311-4973469 </a></p>
+                </div>
             </div>
-            <ul id="menu-links" class="menu-links">
-                <li><a style="text-decoration: none; color: white;"
-                        href="#Home">Home</a></li>
-                <li><a style="text-decoration: none; color: white;"
-                        href="#Aboutme">About</a></li>
-                <li><a style="text-decoration: none; color: white;"
-                        href="#Project">Project</a></li>
-                <li><a style="text-decoration: none; color: white;"
-                        href="#Experience">Experience</a></li>
-                <li><a style="text-decoration: none; color: white;"
-                        href="#Contactme">Contact</a></li>
-            </ul>
-            <img src="menu.png" alt=" " class="menu-icon"
-                onclick="toggleMenu()">
-        </nav>
-        <div id="Home">
-            <div class="main-container">
-                <div class="left-div">
-                    <p class="heading">Hello!</p>
-                    <h1 style="color: wheat;">I'm Ammar</h1>
-                    <p class="description">Software Engineer</p>
-                    <div class="contact-info">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <p><a
-                                href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a>
-                        </p>
-                    </div>
-                    <div class="contact-info">
-                        <i class="fa fa-phone"></i>
-                        <p><a href="tel:+923114973469"> +92 311-4973469 </a></p>
-                    </div>
-                </div>
-                <div class="right-div">
-                    <img src="ammar.jpg" alt="Your Picture">
-                </div>
+            <div class="right-div">
+                <img src="ammar.jpg" alt="Your Picture">
             </div>
         </div>
-        <div id="Aboutme" class="homeabout">
-            <div class="homeabout-left-div">
-                <h2>About Me</h2>
-                <p>I am a dynamic and innovative web developer with a solid
-                    background in BS Software Engineering. With 1 year of
-                    professional experience, I have honed my skills in web
-                    development, focusing on the Angular and Laravel framework. My expertise
-                    extends to various front-end technologies, including
-                    JavaScript
-                    (jQuery), CSS3, HTML5, and Bootstrap. My passion
-                    for
-                    web development is reflected in my dedication to creating
-                    engaging and user-friendly websites.
+    </div>
+    <div id="Aboutme" class="homeabout">
+        <div class="homeabout-left-div">
+            <h2>About Me</h2>
+            <p>I am a dynamic and innovative web developer with a solid
+                background in BS Software Engineering. With 1 year of
+                professional experience, I have honed my skills in web
+                development, focusing on the Angular and Laravel framework. My expertise
+                extends to various front-end technologies, including
+                JavaScript
+                (jQuery), CSS3, HTML5, and Bootstrap. My passion
+                for
+                web development is reflected in my dedication to creating
+                engaging and user-friendly websites.
+            </p>
+        </div>
+        <div class="homeabout-right-div">
+            <div class="skills">
+                <h3>Skills</h3>
+                <div style="margin-bottom: 10px;">ANGULAR</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                </div>
+                <div style="margin-bottom: 10px;">MVC Dotnet</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar1" style="width: 0%"></div>
+                </div>
+                <div style="margin-bottom: 10px;">DOTNET CORE</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar2" style="width: 0%"></div>
+                </div>
+                <div style="margin-bottom: 10px;">LARAVEL</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar3" style="width: 0%"></div>
+                </div>
+                <div style="margin-bottom: 10px;">BOOTSTRAP</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar4" style="width: 0%"></div>
+                </div>
+                <div style="margin-bottom: 10px;">JavaScript</div>
+                <div class="progress" style="margin-bottom: 10px;">
+                    <div class="progress-bar" id="progressBar5" style="width: 0%"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="Project">
+        <h3 style="text-align: center; font-size: 30px; margin-top: 105px;">Projects</h3>
+        <div class="gradient-border"></div>
+        <div class="Projects" style="display: flex; margin-right: 20px;">
+            <div class="projects-left-div"
+                style="margin-top: 30px; width: 35%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a; margin-right: 20px;">
+                <div style="justify-content: center; display: flex"><img src="logo.jpg"></div>
+                <h3>
+                    <a style="color: white;" href="https://umarenterprises.com.pk/">
+                        Umar
+                        Enterprises
+                    </a>
+                </h3>
+                <p>
+                    I developed a dynamic website for UMAR ENTERPRISES,
+                    focusing on showcasing their range of services. The
+                    website offers a user-friendly experience, highlighting
+                    services such as repairing, woodwork, building paint,
+                    and electric items installation. Through this project, I
+                    honed my skills in web development and design, creating
+                    a platform that effectively promotes UMAR ENTERPRISES'
+                    services.
                 </p>
             </div>
-            <div class="homeabout-right-div">
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div style="margin-bottom: 10px;">ANGULAR</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar"
-                            style="width: 0%"></div>
-                    </div>
-                    <div style="margin-bottom: 10px;">MVC Dotnet</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar1"
-                            style="width: 0%"></div>
-                    </div>
-                    <div style="margin-bottom: 10px;">DOTNET CORE</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar2"
-                            style="width: 0%"></div>
-                    </div>
-                    <div style="margin-bottom: 10px;">LARAVEL</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar3"
-                            style="width: 0%"></div>
-                    </div>
-                    <div style="margin-bottom: 10px;">BOOTSTRAP</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar4"
-                            style="width: 0%"></div>
-                    </div>
-                    <div style="margin-bottom: 10px;">JavaScript</div>
-                    <div class="progress" style="margin-bottom: 10px;">
-                        <div class="progress-bar" id="progressBar5"
-                            style="width: 0%"></div>
-                    </div>
+            <div class="projects-left-div"
+                style="margin-top: 30px; width: 35%; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a;">
+                <div style="justify-content: center; display: flex"><img src="Untitled-1.png"></div>
+                <h3>Chughtai Publishers</h3>
+                <p>
+                    I developed an Account Management System for CP in
+                    Laravel, which greatly enhanced my skills in both
+                    finance and development. Throughout the project, I
+                    encountered several challenges, particularly in
+                    automating the creation of bills and converting them
+                    into PDF format for easy download. Despite these
+                    hurdles, I successfully implemented these features,
+                    further strengthening my expertise in both areas.
+                </p>
+            </div>
+        </div>
+        <div class="Projects" style="display: flex; margin-right: 20px;">
+            <div class="projects-left-div"
+                style="margin-top: 30px; width: 30%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a; margin-right: 20px;">
+                <div style="justify-content: center; display: flex"><img style="width:50%;" src="ud.png"></div>
+                <h3> اردو ذیابیطس </h3>
+                <p>
+                    اردو ذیابیطس is a comprehensive online platform designed to provide accurate and easy-to-understand
+                    information about diabetes in Urdu.
+                    The project aims to educate Urdu-speaking individuals about diabetes management, prevention,
+                    symptoms, treatment options, and healthy lifestyle choices.
+                    With user-friendly content, expert insights, and practical tips, اردو ذیابیطس helps individuals take
+                    informed steps toward better diabetes care.
+                </p>
+            </div>
+            <div class=""
+                style="margin-top: 30px; width: 47%; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; ">
+                <div><img src=""></div>
+                <h3></h3>
+                <p>
 
-                </div>
+                </p>
             </div>
         </div>
-        <div id="Project">
-            <h3 style="text-align: center; font-size: 30px; margin-top: 105px;">Projects</h3>
-            <div class="gradient-border"></div>
-            <div class="Projects" style="display: flex; margin-right: 20px;">
-                <div class="projects-left-div"
-                     style="margin-top: 30px; width: 35%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a; margin-right: 20px;">
-                    <div style="justify-content: center; display: flex"><img src="logo.jpg"></div>
-                    <h3>
-                        <a style="color: white;"
-                           href="https://umarenterprises.com.pk/">
-                            Umar
-                            Enterprises
-                        </a>
-                    </h3>
-                    <p>
-                        I developed a dynamic website for UMAR ENTERPRISES,
-                        focusing on showcasing their range of services. The
-                        website offers a user-friendly experience, highlighting
-                        services such as repairing, woodwork, building paint,
-                        and electric items installation. Through this project, I
-                        honed my skills in web development and design, creating
-                        a platform that effectively promotes UMAR ENTERPRISES'
-                        services.
-                    </p>
-                </div>
-                <div class="projects-left-div"
-                     style="margin-top: 30px; width: 35%; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a;">
-                    <div style="justify-content: center; display: flex"><img src="Untitled-1.png"></div>
-                    <h3>Chughtai Publishers</h3>
-                    <p>
-                        I developed an Account Management System for CP in
-                        Laravel, which greatly enhanced my skills in both
-                        finance and development. Throughout the project, I
-                        encountered several challenges, particularly in
-                        automating the creation of bills and converting them
-                        into PDF format for easy download. Despite these
-                        hurdles, I successfully implemented these features,
-                        further strengthening my expertise in both areas.
-                    </p>
-                </div>
-            </div>
-            <div class="Projects" style="display: flex; margin-right: 20px;">
-                <div class="projects-left-div"
-                     style="margin-top: 30px; width: 30%; flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; background-color: #ffffff1a; margin-right: 20px;">
-                    <div style="justify-content: center; display: flex"><img style="width:50%;" src="ud.png"></div>
-                    <h3> اردو ذیابیطس  </h3>
-                    <p>
-                        اردو ذیابیطس is a comprehensive online platform designed to provide accurate and easy-to-understand information about diabetes in Urdu.
-                         The project aims to educate Urdu-speaking individuals about diabetes management, prevention, symptoms, treatment options, and healthy lifestyle choices.
-                          With user-friendly content, expert insights, and practical tips, اردو ذیابیطس helps individuals take informed steps toward better diabetes care.
-                    </p>
-                </div>
-                <div class=""
-                     style="margin-top: 30px; width: 47%; padding: 20px; display: flex; flex-direction: column; justify-content: center; text-align: justify; ">
-                    <div><img src=""></div>
-                    <h3></h3>
-                    <p>
-                        
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="Experience" >
-            <h3
-                style="text-align: center; font-size: 30px; margin-top: 20px;">Experience</h3>
-            <div class="gradient-border"></div>
-            <div class="Experience">
-                <div class="row">
-                    <div class="Experience-left-div">
-                        <h2>Software Engineer</h2>
-                        <h4>June 2024 - Present</h4>
-                        <h3>Punjab Healthcare Commision (PHC)</h3>
-                        <p>At PHC, I am actively engaged in various facets of
-                            technology and development. My role involves
-                            learning new technologies to stay current with
-                            industry trends and advancements. I contribute to
-                            development efforts by working on new
-                            functionalities, enhancing existing systems, and
-                            exploring innovative solutions. Additionally, I play
-                            a key role in testing to ensure the quality and
-                            functionality of our projects, helping to deliver
-                            robust and reliable software solutions.</p>
-                    </div>
-                    <div class="Experience-right-div">
-                        <h2>Software Engineer</h2>
-                        <h4>January 2023 - June 2024</h4>
-                        <h3>Freelancing</h3>
-                        <p>As a freelancer, I have successfully completed three
-                            projects, including the development of a custom-made
-                            website. These projects involved creating account
-                            management
-                            systems and designing company websites.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="Experience-left-div">
-                        <h2>Computer Teacher</h2>
-                        <h4>November 2022 - November 2023</h4>
-                        <h3>Academy</h3>
-                        <p>As a computer science teacher at the academy, I
-                            prepare students in classes 9 to 11 for their exams
-                            by teaching comprehensive computing concepts based
-                            on the Punjab textbook curriculum. My role involves
-                            designing and delivering lessons that cover
-                            essential topics, ensuring that students grasp the
-                            material thoroughly. I focus on equipping students
-                            with the knowledge and skills they need to excel in
-                            their exams, including providing practice questions,
-                            reviewing key concepts, and offering support to
-                            enhance their understanding and performance.</p>
-                    </div>
-                    <div class="Experience-right-div">
-                        <h2>Math Teacher</h2>
-                        <h3>November 2022 - November 2023</h3>
-                        <h3>Academy</h3>
-                        <p>As a math teacher at the academy, I prepare students
-                            in classes 9 to 11 for their exams by teaching a
-                            comprehensive curriculum based on the Punjab
-                            textbook guidelines. My role involves designing and
-                            delivering lessons that cover essential mathematical
-                            concepts, including algebra, geometry, and
-                            statistics. I ensure that students understand the
-                            material thoroughly by providing practice problems,
-                            reviewing key concepts, and offering individualized
-                            support. My focus is on equipping students with the
-                            problem-solving skills and knowledge they need to
-                            excel in their exams and build a strong foundation
-                            for future mathematical studies.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div id="Education">
-            <h3
-                style="text-align: center; font-size: 30px; margin-top: 100px ;">Education</h3>
-            <div class="gradient-border"></div>
-            <div class="Education">
-                <div class="Education-left-div">
-                    <h2>BS Software Engineering</h2>
-                    <h4>2019 - 2023</h4>
-                    <h3>University of Management and Technology</h3>
-                </div>
-                <div class="Education-right-div">
-                    <h2>Intermediate ICS</h2>
-                    <h4>2017 - 2019</h4>
-                    <h3>Unique College</h3>
-                </div>
-            </div>
-        </div>
-        <div id="Education">
-            <h3
-                style="text-align: center; font-size: 30px; margin-top: 100px ;">Short
-                Courses</h3>
-            <div class="gradient-border"></div>
-            <div class="Education">
-                <div class="Education-left-div">
-                    <h2>Graphics Designing and Video Editing</h2>
-                    <h4>August 2021 - Octuber 2021</h4>
-                    <h3>University of Engineering and Technology</h3>
-                </div>
-            </div>
-            <div class="Education">
-                <div class="Education-left-div">
-                    <h2>CCNA Enterprises & Linux</h2>
-                    <h4>September 2024 - November 2024</h4>
-                    <h3>CORVIT</h3>
-                </div>
-            </div>
-        </div>
-        <h3 style="text-align: center; font-size: 30px;">Contact Me</h3>
+    </div>
+    <div id="Experience">
+        <h3 style="text-align: center; font-size: 30px; margin-top: 20px;">Experience</h3>
         <div class="gradient-border"></div>
-        <div id="Contactme" class="Contactme">
-            <div>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <h2>Contact Number</h2>
-                <p><a style="color:gray;" href="tel:+923114973469"> +92
-                        311-4973469 </a></p>
-            </div>
-            <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <h2>Email Address</h2>
-                <p><a style="color:gray;"
-                        href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a></p>
-            </div>
-            <div>
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                <h2>Resume</h2>
-                <p><a style="color:gray;"
-                        href="https://drive.google.com/file/d/1dC4IRoxxgbgccggEB5Cm9lD75ea8f60U/view?usp=drive_link">Ammar's
-                        Resume </a></p>
-            </div>
-        </div>
-        <div class="query">
-            <div class="query-left-div">
-                <p>HAVE A QUESTION? <br><span>Feel Free To
-                        Contact</span></p></div>
-            <div class="query-right-div">
-                <div>
-                    <a href="https://forms.gle/dbX4vUSyh2S1jquy7"> CLICK
-                        HERE</a>
+        <div class="Experience">
+            <div class="row">
+                <div class="Experience-left-div">
+                    <h2>Software Engineer</h2>
+                    <h4>June 2024 - Present</h4>
+                    <h3>Punjab Healthcare Commision (PHC)</h3>
+                    <p>At PHC, I am actively engaged in various facets of
+                        technology and development. My role involves
+                        learning new technologies to stay current with
+                        industry trends and advancements. I contribute to
+                        development efforts by working on new
+                        functionalities, enhancing existing systems, and
+                        exploring innovative solutions. Additionally, I play
+                        a key role in testing to ensure the quality and
+                        functionality of our projects, helping to deliver
+                        robust and reliable software solutions.</p>
+                </div>
+                <div class="Experience-right-div">
+                    <h2>Software Engineer</h2>
+                    <h4>January 2023 - June 2024</h4>
+                    <h3>Freelancing</h3>
+                    <p>As a freelancer, I have successfully completed three
+                        projects, including the development of a custom-made
+                        website. These projects involved creating account
+                        management
+                        systems and designing company websites.</p>
                 </div>
             </div>
-        </div>
-        <div class="links">
-            <div class="links-left-div">
-                <p>Find me on</p>
+            <div class="row">
+                <div class="Experience-left-div">
+                    <h2>Computer Teacher</h2>
+                    <h4>November 2022 - November 2023</h4>
+                    <h3>Academy</h3>
+                    <p>As a computer science teacher at the academy, I
+                        prepare students in classes 9 to 11 for their exams
+                        by teaching comprehensive computing concepts based
+                        on the Punjab textbook curriculum. My role involves
+                        designing and delivering lessons that cover
+                        essential topics, ensuring that students grasp the
+                        material thoroughly. I focus on equipping students
+                        with the knowledge and skills they need to excel in
+                        their exams, including providing practice questions,
+                        reviewing key concepts, and offering support to
+                        enhance their understanding and performance.</p>
+                </div>
+                <div class="Experience-right-div">
+                    <h2>Math Teacher</h2>
+                    <h3>November 2022 - November 2023</h3>
+                    <h3>Academy</h3>
+                    <p>As a math teacher at the academy, I prepare students
+                        in classes 9 to 11 for their exams by teaching a
+                        comprehensive curriculum based on the Punjab
+                        textbook guidelines. My role involves designing and
+                        delivering lessons that cover essential mathematical
+                        concepts, including algebra, geometry, and
+                        statistics. I ensure that students understand the
+                        material thoroughly by providing practice problems,
+                        reviewing key concepts, and offering individualized
+                        support. My focus is on equipping students with the
+                        problem-solving skills and knowledge they need to
+                        excel in their exams and build a strong foundation
+                        for future mathematical studies.</p>
+                </div>
             </div>
-            <div class="links-right-div">
-                <div style="text-align: left;margin-top: 10px;">
-                    <a
-                        href="https://www.linkedin.com/in/ammar-izhar-61a442204/">
-                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    </a>
 
-                    <a href="https://github.com/aimsking110"><i
-                            class="fa fa-github"></i></a>
-                    <a
-                        href="https://www.instagram.com/aims_king_official?igsh=Zmoxd25jYmU3ZzRz"><i
-                            class="fab fa-instagram"></i></a></div>
+        </div>
+    </div>
+    <div id="Education">
+        <h3 style="text-align: center; font-size: 30px; margin-top: 100px ;">Education</h3>
+        <div class="gradient-border"></div>
+        <div class="Education">
+            <div class="Education-left-div">
+                <h2>BS Software Engineering</h2>
+                <h4>2019 - 2023</h4>
+                <h3>University of Management and Technology</h3>
+            </div>
+            <div class="Education-right-div">
+                <h2>Intermediate ICS</h2>
+                <h4>2017 - 2019</h4>
+                <h3>Unique College</h3>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Ammar</p>
+    </div>
+    <div id="Education">
+        <h3 style="text-align: center; font-size: 30px; margin-top: 100px ;">Short
+            Courses</h3>
+        <div class="gradient-border"></div>
+        <div class="Education">
+            <div class="Education-left-div">
+                <h2>Graphics Designing and Video Editing</h2>
+                <h4>August 2021 - Octuber 2021</h4>
+                <h3>University of Engineering and Technology</h3>
+            </div>
         </div>
-    </body>
-    <script>
-        function move() {
-    let elem = document.getElementById("progressBar");
-    let elem1 = document.getElementById("progressBar1");
-    let elem2 = document.getElementById("progressBar2");
-    let elem3 = document.getElementById("progressBar3");
-    let elem4 = document.getElementById("progressBar4");
-    let elem5 = document.getElementById("progressBar5");
+        <div class="Education">
+            <div class="Education-left-div">
+                <h2>CCNA Enterprises & Linux</h2>
+                <h4>September 2024 - November 2024</h4>
+                <h3>CORVIT</h3>
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center; font-size: 30px;">Contact Me</h3>
+    <div class="gradient-border"></div>
+    <div id="Contactme" class="Contactme">
+        <div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h2>Contact Number</h2>
+            <p><a style="color:gray;" href="tel:+923114973469"> +92
+                    311-4973469 </a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h2>Email Address</h2>
+            <p><a style="color:gray;" href="mailto:ammar110izhar@gmail.com">ammar110izhar@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            <h2>Resume</h2>
+            <p><a style="color:gray;"
+                    href="https://drive.google.com/file/d/1dC4IRoxxgbgccggEB5Cm9lD75ea8f60U/view?usp=drive_link">Ammar's
+                    Resume </a></p>
+        </div>
+    </div>
+    <div class="query">
+        <div class="query-left-div">
+            <p>HAVE A QUESTION? <br><span>Feel Free To
+                    Contact</span></p>
+        </div>
+        <div class="query-right-div">
+            <div>
+                <a href="https://forms.gle/dbX4vUSyh2S1jquy7"> CLICK
+                    HERE</a>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <div class="links-left-div">
+            <p>Find me on</p>
+        </div>
+        <div class="links-right-div">
+            <div style="text-align: left;margin-top: 10px;">
+                <a href="https://www.linkedin.com/in/ammar-izhar-61a442204/">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
 
-    let width = 0;
-    let width1 = 0;
-    let width2 = 0;
-    let width3 = 0;
-    let width4 = 0;
-    let width5 = 0;
+                <a href="https://github.com/aimsking110"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/aims_king_official?igsh=Zmoxd25jYmU3ZzRz"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://aktechsol.com"><i class="fa fa-globe"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ammar</p>
+    </div>
+</body>
+<script>
+    function move() {
+        let elem = document.getElementById("progressBar");
+        let elem1 = document.getElementById("progressBar1");
+        let elem2 = document.getElementById("progressBar2");
+        let elem3 = document.getElementById("progressBar3");
+        let elem4 = document.getElementById("progressBar4");
+        let elem5 = document.getElementById("progressBar5");
 
-    let id = setInterval(frame, 10);
-    let id1 = setInterval(frame1, 10);
-    let id2 = setInterval(frame2, 10);
-    let id3 = setInterval(frame3, 10);
-    let id4 = setInterval(frame4, 10);
-    let id5 = setInterval(frame5, 10);
+        let width = 0;
+        let width1 = 0;
+        let width2 = 0;
+        let width3 = 0;
+        let width4 = 0;
+        let width5 = 0;
 
-    function frame() {
-        if (width >= 90) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + "%";
-            elem.innerHTML = `<span style="color: black;">${width}%</span>`; 
+        let id = setInterval(frame, 10);
+        let id1 = setInterval(frame1, 10);
+        let id2 = setInterval(frame2, 10);
+        let id3 = setInterval(frame3, 10);
+        let id4 = setInterval(frame4, 10);
+        let id5 = setInterval(frame5, 10);
+
+        function frame() {
+            if (width >= 90) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = `<span style="color: black;">${width}%</span>`;
+            }
+        }
+
+        function frame1() {
+            if (width1 >= 80) {
+                clearInterval(id1);
+            } else {
+                width1++;
+                elem1.style.width = width1 + "%";
+                elem1.innerHTML = `<span style="color: black;">${width1}%</span>`;
+            }
+        }
+
+        function frame2() {
+            if (width2 >= 70) {
+                clearInterval(id2);
+            } else {
+                width2++;
+                elem2.style.width = width2 + "%";
+                elem2.innerHTML = `<span style="color: black;">${width2}%</span>`;
+            }
+        }
+
+        function frame3() {
+            if (width3 >= 90) {
+                clearInterval(id3);
+            } else {
+                width3++;
+                elem3.style.width = width3 + "%";
+                elem3.innerHTML = `<span style="color: black;">${width3}%</span>`;
+            }
+        }
+
+        function frame4() {
+            if (width4 >= 70) {
+                clearInterval(id4);
+            } else {
+                width4++;
+                elem4.style.width = width4 + "%";
+                elem4.innerHTML = `<span style="color: black;">${width4}%</span>`;
+            }
+        }
+
+        function frame5() {
+            if (width5 >= 60) {
+                clearInterval(id5);
+            } else {
+                width5++;
+                elem5.style.width = width5 + "%";
+                elem5.innerHTML = `<span style="color: black;">${width5}%</span>`;
+            }
         }
     }
 
-    function frame1() {
-        if (width1 >= 80) {
-            clearInterval(id1);
+    move();
+
+    $(window).on('scroll', function () {
+        var scrollPosition = $(this).scrollTop();
+        if (scrollPosition > 100) {
+            $('nav').addClass('fixed-nav');
         } else {
-            width1++;
-            elem1.style.width = width1 + "%";
-            elem1.innerHTML = `<span style="color: black;">${width1}%</span>`; 
+            $('nav').removeClass('fixed-nav');
         }
-    }
-
-    function frame2() {
-        if (width2 >= 70) {
-            clearInterval(id2);
-        } else {
-            width2++;
-            elem2.style.width = width2 + "%";
-            elem2.innerHTML = `<span style="color: black;">${width2}%</span>`; 
-        }
-    }
-
-    function frame3() {
-        if (width3 >= 90) {
-            clearInterval(id3);
-        } else {
-            width3++;
-            elem3.style.width = width3 + "%";
-            elem3.innerHTML = `<span style="color: black;">${width3}%</span>`; 
-        }
-    }
-
-    function frame4() {
-        if (width4 >= 70) {
-            clearInterval(id4);
-        } else {
-            width4++;
-            elem4.style.width = width4 + "%";
-            elem4.innerHTML = `<span style="color: black;">${width4}%</span>`; 
-        }
-    }
-
-    function frame5() {
-        if (width5 >= 60) {
-            clearInterval(id5);
-        } else {
-            width5++;
-            elem5.style.width = width5 + "%";
-            elem5.innerHTML = `<span style="color: black;">${width5}%</span>`; 
-        }
-    }
-}
-
-move();
-
-$(window).on('scroll', function () {
-    var scrollPosition = $(this).scrollTop();
-    if (scrollPosition > 100) {
-        $('nav').addClass('fixed-nav');
-    } else {
-        $('nav').removeClass('fixed-nav');
-    }
-});
+    });
 
 
-    </script>
-    <script>
-        let menuLinks = document.getElementById("menu-links");
-    function toggleMenu() { 
+</script>
+<script>
+    let menuLinks = document.getElementById("menu-links");
+    function toggleMenu() {
         menuLinks.classList.toggle('menu-links');
     }
-    </script>
-    <script>
+</script>
+<script>
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            var targetId = this.getAttribute('href'); 
-            var targetElement = document.querySelector(targetId); 
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            var targetId = this.getAttribute('href');
+            var targetElement = document.querySelector(targetId);
             if (targetElement) {
-                var offsetTop = targetElement.offsetTop; 
+                var offsetTop = targetElement.offsetTop;
                 window.scrollTo({
-                    top: offsetTop - 100, 
-                    behavior: 'smooth' 
+                    top: offsetTop - 100,
+                    behavior: 'smooth'
                 });
             }
         });
     });
 </script>
+
 </html>
