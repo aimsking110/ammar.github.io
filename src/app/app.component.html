@@ -30,7 +30,6 @@
       <i class="fa fa-arrow-down fa-xs" style="color: #63E6BE; font-size: 40px;"></i>
     </div>
     <h2>Here are some ways I've made a difference:</h2>
-
     <ul class="list-unstyled text-start mx-auto fs-5" style="max-width: 750px;">
       <li>✔️ Developed and deployed responsive web applications using different frameworks.</li>
       <li>✔️ Created RESTful APIs in Laravel and .NET for seamless frontend-backend integration.</li>
@@ -46,15 +45,66 @@
   </div>
 </section>
 
-<section class="py-5 mx-auto" style="height: auto; overflow: hidden;">
+<section class="py-5 mx-auto" style=" overflow: hidden;">
   <div class="justify-content-center align-items-center text-center">
     <h1> I worked with </h1>
   </div>
-  <div class=" py-5 w-75 mx-auto" style="height: auto; overflow: hidden;">
+  <div class=" py-5 w-75 mx-auto container" style="overflow: hidden;">
     <div class="project-work position-relative">
       <div class="project-work-card"><img src="/logo.png" alt="Project 5" /></div>
-      <div class="project-work-card"><img src="/UE-LOGO-1.png" alt="Project 6" /></div>
-      <div class="project-work-card"><img src="/CP.png" alt="Project 7" /></div>
+      <div class="project-work-card"><img src="/CP.png" alt="Project 6" /></div>
+      <div class="project-work-card"><img src="/UE-LOGO-1.png" alt="Project 7" /></div>
+      <div class="project-work-card"><img src="/urdu.png" alt="Project 8" /></div>
+      <div class="project-work-card"><img src="/pf.png" alt="Project 9" /></div>
+      <div class="project-work-card"><img src="/phc.png" alt="Project 10" /></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 w-75 mx-auto container">
+  <h2 class="text-center mb-5">Open for Work</h2>
+  <div class="row p-4 mb-5  glass-background">
+
+    <div class="col-md-6 d-flex flex-column justify-content-between" style="height: 100%;">
+      <div class="p-2 rounded">
+        <h3>Let’s build something extraordinary</h3>
+        <h4>Where ideas come alive and possibilities have no limits.</h4>
+        <h5>Have a project in mind? Fill out this quick form — it only takes a moment, and I’ll get back to you with how I can help!</h5>
+      </div>
+
+      <div class="mt-auto p-2 text-start">
+        <a href="https://www.linkedin.com/in/ammar-izhar-61a442204/" target="_blank" style="text-decoration: none; color: palegoldenrod; font-size: 22px">
+          Connect with me on LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-2 rounded">
+        <form>
+          <div class="mb-3">
+            <input type="text" id="Name" class="form-control" name="Name" placeholder="Your Name" #Name="ngModel" [(ngModel)]="model.Name">
+          </div>
+          <div class="mb-3">
+            <input type="tel" id="PhoneNumber" class="form-control" name="PhoneNumber" placeholder="Phone Number" #PhoneNumber="ngModel" [(ngModel)]="model.PhoneNumber">
+          </div>
+          <div class="mb-3">
+            <input type="email" id="Email" class="form-control" name="Email" placeholder="Email Address" #Email="ngModel" [(ngModel)]="model.Email">
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="ProjectType" name="ProjectType" placeholder="Project Type" #ProjectType="ngModel" [(ngModel)]="model.ProjectType">
+              <option selected disabled>Select project type</option>
+              <option>New Whole Project</option>
+              <option>Frontend Only</option>
+              <option>Backend Only</option>
+              <option>Fixing Existing Project</option>
+              <option>UI/UX Design</option>
+              <option>Web Hosting</option>
+            </select>
+          </div>
+          <button type="submit" class="fancy-btn-submit mt-4 color-dark" (click)="sendEmail(model)">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
