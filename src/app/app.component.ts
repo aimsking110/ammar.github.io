@@ -17,8 +17,7 @@ export class AppComponent {
 
   sendEmail(form: NgForm) {
     debugger;
-    if (this.model != null)
-    {
+    if (this.model != null) {
       emailjs.send('service_dcjzjb9', 'template_vlfboma', this.model, 'Xob0I7u0oLyPnmcRJ')
         .then(response => {
           this.model.reset();
